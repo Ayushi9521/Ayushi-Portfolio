@@ -61,6 +61,7 @@ h2 {
   font-weight: 400;
   margin: 0;
   padding-top: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 h3 {
@@ -87,7 +88,31 @@ p.small {
 hr {
   margin: 2.5rem;
 }
-
+.Header-sec{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(255,255,255,0.75);
+  padding: 1rem;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.about-sec{
+  background-color: white;
+  width: 50%;
+  padding: 4rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+.skill{
+  text-align: left;
+  columns: 2;
+  font-size: 1.25rem;
+  margin: 2rem 3re;
+  gap: 3rem,
+}
 li {
   line-height: 1.7;
 }
@@ -122,11 +147,23 @@ a:hover {
   text-align: center;
 }
 
+.container .box:hover{
+  transform: scale(1.1);
+}
 img.socialIcon {
   height: 30px;
   width: 30px;
 }
-
+/* Portfolio section */
+.portfolio-section{
+  display: flex;
+  flex-direction: row;
+  padding-top: 3rem;
+}
+.portfolio-img{
+  max-width: 40%;
+  align-self: center;
+}
 @keyframes slideInLeft {
   0% {
     transform: translateX(-100%);
@@ -197,6 +234,9 @@ img.socialIcon {
   text-align: left;
   margin: 0 2rem;
 }
+.experience-card:hover{
+    transform: translateY(-10px);
+}
 
 .experience-card h3 {
   margin: 0.5rem 0;
@@ -212,3 +252,59 @@ img.socialIcon {
 .experience-card strong {
   color: #555;
 }
+
+@media (max-width:1024.98px){
+  .portfolio-img{
+    display: none;    
+  }
+  .container{
+    grid-template-columns: 370px 370px;
+  }
+}
+
+@media(max-width:768.98px){
+  .container{
+    grid-template-columns: 310px 310px;
+  }
+}
+@media(max-width:665.98px){
+  .container{
+    grid-template-columns: 240px 240px;
+  }
+  .skill{
+    columns: 1;
+  }
+}
+@media(max-width:568.98px){
+  .container{
+    grid-template-columns: 1fr;
+    margin: 0 30px;
+  }
+  .skill{
+    columns: 1;
+  }
+  .education-grid{
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .Header-sec{
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+    font-size: 10px;
+  }
+  h1{
+    font-size: 5rem;
+  }
+  .about-sec{
+    width: 70%;
+    padding: 2rem;
+  }
+}
+
+@media(max-width:375.98px){
+  h1 {
+    margin-top: 2rem;
+    font-size: 4rem;
+  }
+}
+
