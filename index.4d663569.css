@@ -52,6 +52,7 @@ h1 {
 }
 
 h2 {
+  text-shadow: 2px 2px 5px #0000004d;
   margin: 0;
   padding-top: 1rem;
   font-size: 2rem;
@@ -81,6 +82,34 @@ p.small {
 
 hr {
   margin: 2.5rem;
+}
+
+.Header-sec {
+  width: 100%;
+  z-index: 10;
+  background: #ffffffbf;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+.about-sec {
+  width: 50%;
+  text-align: center;
+  background-color: #fff;
+  margin: 3rem auto;
+  padding: 4rem;
+}
+
+.skill {
+  text-align: left;
+  columns: 2;
+  margin: 2rem 3re;
+  gap: 3rem, ;
+  font-size: 1.25rem;
 }
 
 li {
@@ -117,9 +146,24 @@ a:hover {
   display: flex;
 }
 
+.container .box:hover {
+  transform: scale(1.1);
+}
+
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+.portfolio-section {
+  flex-direction: row;
+  padding-top: 3rem;
+  display: flex;
+}
+
+.portfolio-img {
+  max-width: 40%;
+  align-self: center;
 }
 
 @keyframes slideInLeft {
@@ -191,6 +235,10 @@ img.socialIcon {
   box-shadow: 0 4px 8px #0000001a;
 }
 
+.experience-card:hover {
+  transform: translateY(-10px);
+}
+
 .experience-card h3 {
   color: #333;
   margin: .5rem 0;
@@ -204,6 +252,70 @@ img.socialIcon {
 
 .experience-card strong {
   color: #555;
+}
+
+@media (max-width: 1024.98px) {
+  .portfolio-img {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: 370px 370px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .container {
+    grid-template-columns: 310px 310px;
+  }
+}
+
+@media (max-width: 665.98px) {
+  .container {
+    grid-template-columns: 240px 240px;
+  }
+
+  .skill {
+    columns: 1;
+  }
+}
+
+@media (max-width: 568.98px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 0 30px;
+  }
+
+  .skill {
+    columns: 1;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .Header-sec {
+    gap: 1rem;
+    padding: 1rem .5rem;
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .about-sec {
+    width: 70%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 375.98px) {
+  h1 {
+    margin-top: 2rem;
+    font-size: 4rem;
+  }
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
