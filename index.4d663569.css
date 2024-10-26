@@ -135,6 +135,7 @@ img.socialIcon {
 .education-grid {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  margin-top: 3rem;
   padding: 2rem;
   display: grid;
 }
@@ -172,6 +173,37 @@ img.socialIcon {
   50% {
     transform: translateY(-10px);
   }
+}
+
+.experience-list {
+  flex-direction: column;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.experience-card {
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 0 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.experience-card h3 {
+  color: #333;
+  margin: .5rem 0;
+  font-size: 1.2rem;
+}
+
+.experience-card p {
+  color: #555;
+  margin: .25rem 0;
+}
+
+.experience-card strong {
+  color: #555;
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
