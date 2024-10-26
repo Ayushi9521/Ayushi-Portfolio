@@ -19,9 +19,10 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/worklife.jpg";
 
 const imageAltText = "desktop with books and laptop";
+
 
 /**
  * Project list
@@ -31,28 +32,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "BookBio Web Apps",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "React JS was used to construct a landing page for a book bio app so that readers could easily take notes while they read.",
+    url: "https://github.com/Ayushi9521/bookbio",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Quiz App",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "While learning EJS, I developed a dynamic quiz app that improved my backend and templating abilities. My ability to develop dynamic, data-driven applications with an emphasis on user experience is demonstrated by this project.",
+    url: "https://github.com/Ayushi9521/quiz-app",
   },
   {
-    title: "My Resume Site",
+    title: "My Portfolio Site",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "This project, which I developed from an Udemy full-stack web developer course, demonstrates my practical experience and design skills. It showcases my development as a developer and problem-solver and is hosted on GitHub Pages.",
+    url: "https://ayushi9521.github.io/resume/",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "EMS",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "I created this project to improve my backend development abilities while studying Django. It illustrates my capacity to develop dependable, expandable web applications with an emphasis on usefulness and effective database administration.",
+    url: "https://github.com/Ayushi9521/EMS",
   },
 ];
 
@@ -64,7 +65,7 @@ const Portfolio = () => {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{ height: "90%", width: "100%", objectFit: "cover", animation: "1s ease-out 0s 1 slideInLeft"}}
             alt={imageAltText}
           />
         </div>

@@ -3,6 +3,9 @@
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -122,4 +125,55 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for a 2x2 grid */
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.education-cell {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education-cell h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.education-cell p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.education-cell span {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
